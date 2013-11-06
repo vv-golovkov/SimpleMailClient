@@ -1,0 +1,7 @@
+/SimpleMailClientTest-dev.launch
+/SimpleMailClientTest-prod.launch
+/target
+/.externalToolBuilders
+/.settings
+/.classpath
+/.project
