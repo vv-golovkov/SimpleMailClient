@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<servlet>
+		<servlet-name>baseRemoteServiceServlet</servlet-name>
+		<servlet-class>com.mail.app.server.remote.BaseRemoteServiceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>baseRemoteServiceServlet</servlet-name>
+		<url-pattern>/SimpleMailClient/rpcServices/BaseService.rpc</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>240</session-timeout>
+	</session-config>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>SimpleMailClient.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
